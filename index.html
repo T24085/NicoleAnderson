@@ -95,18 +95,18 @@
     <section id="contact" class="py-20 bg-gray-100">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Get in Touch</h2>
-            <form class="max-w-lg mx-auto">
+            <form action="https://formspree.io/f/xdkgvjwb" method="POST" class="max-w-lg mx-auto">
                 <div class="mb-6">
                     <label for="name" class="block text-gray-600 mb-2">Name</label>
-                    <input type="text" id="name" class="w-full p-3 border rounded-lg focus:outline-none focus:border-blue-600" required>
+                    <input type="text" id="name" name="name" class="w-full p-3 border rounded-lg focus:outline-none focus:border-blue-600" required>
                 </div>
                 <div class="mb-6">
                     <label for="email" class="block text-gray-600 mb-2">Email</label>
-                    <input type="email" id="email" class="w-full p-3 border rounded-lg focus:outline-none focus:border-blue-600" required>
+                    <input type="email" id="email" name="email" class="w-full p-3 border rounded-lg focus:outline-none focus:border-blue-600" required>
                 </div>
                 <div class="mb-6">
                     <label for="message" class="block text-gray-600 mb-2">Message</label>
-                    <textarea id="message" class="w-full p-3 border rounded-lg focus:outline-none focus:border-blue-600" rows="5" required></textarea>
+                    <textarea id="message" name="message" class="w-full p-3 border rounded-lg focus:outline-none focus:border-blue-600" rows="5" required></textarea>
                 </div>
                 <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition w-full">Send Message</button>
             </form>
@@ -133,13 +133,6 @@
                     behavior: 'smooth'
                 });
             });
-        });
-
-        // Form submission (basic example, replace with actual backend logic)
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! Nicole will get back to you soon.');
-            this.reset();
         });
     </script>
 </body>
