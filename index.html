@@ -11,7 +11,7 @@
             font-family: 'Poppins', sans-serif;
         }
         .hero-bg {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('outside.jpg');
             background-size: cover;
             background-position: center;
         }
@@ -25,6 +25,7 @@
             <ul class="flex space-x-6">
                 <li><a href="#home" class="text-gray-600 hover:text-blue-600">Home</a></li>
                 <li><a href="#about" class="text-gray-600 hover:text-blue-600">About</a></li>
+                <li><a href="#listing" class="text-gray-600 hover:text-blue-600">Featured Listing</a></li>
                 <li><a href="#services" class="text-gray-600 hover:text-blue-600">Services</a></li>
                 <li><a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a></li>
             </ul>
@@ -45,7 +46,7 @@
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">About Nicole</h2>
             <div class="flex flex-col md:flex-row items-center">
-                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" alt="Nicole Anderson" class="w-full md:w-1/2 rounded-lg shadow-lg mb-6 md:mb-0 md:mr-8">
+                <img src="self.jpg" alt="Nicole Anderson" class="w-full md:w-1/2 rounded-lg shadow-lg mb-6 md:mb-0 md:mr-8">
                 <div>
                     <p class="text-gray-600 mb-4">Nicole Anderson is a dedicated realtor with over 10 years of experience in the real estate industry. Her passion for helping clients find their perfect home is matched only by her commitment to providing exceptional service.</p>
                     <p class="text-gray-600">Whether you're buying, selling, or investing, Nicole's expertise and personalized approach ensure a seamless and stress-free experience. Trust her to guide you every step of the way.</p>
@@ -54,20 +55,35 @@
         </div>
     </section>
 
+    <!-- Featured Listing Section -->
+    <section id="listing" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Featured Listing</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <img src="outside.jpg" alt="House Exterior" class="w-full rounded-lg shadow-lg">
+                <img src="inside.jpg" alt="House Interior" class="w-full rounded-lg shadow-lg">
+            </div>
+            <div class="text-center mt-8">
+                <p class="text-gray-600 mb-4">Stunning modern home at 513 Evergreen Lane. Contact Nicole to schedule a viewing!</p>
+                <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">Inquire Now</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Services Section -->
-    <section id="services" class="py-20 bg-gray-100">
+    <section id="services" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Our Services</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg text-center">
                     <h3 class="text-xl font-semibold text-gray-800 mb-4">Home Buying</h3>
                     <p class="text-gray-600">Find your perfect home with expert guidance and personalized support.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg text-center">
                     <h3 class="text-xl font-semibold text-gray-800 mb-4">Home Selling</h3>
                     <p class="text-gray-600">Maximize your property’s value with strategic marketing and negotiation.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg text-center">
                     <h3 class="text-xl font-semibold text-gray-800 mb-4">Investment Properties</h3>
                     <p class="text-gray-600">Grow your portfolio with expert advice on real estate investments.</p>
                 </div>
@@ -76,7 +92,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-white">
+    <section id="contact" class="py-20 bg-gray-100">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Get in Touch</h2>
             <form class="max-w-lg mx-auto">
@@ -100,7 +116,7 @@
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-6">
         <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2025 Nicole Anderson Real Estate. All rights reserved.</p>
+            <p>© 2025 Nicole Anderson Real Estate. All rights reserved.</p>
             <div class="mt-4">
                 <a href="tel:+1234567890" class="text-gray-400 hover:text-white mx-2">+1 (234) 567-890</a> |
                 <a href="mailto:nicole@andersonrealty.com" class="text-gray-400 hover:text-white mx-2">nicole@andersonrealty.com</a>
